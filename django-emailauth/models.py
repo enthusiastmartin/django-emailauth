@@ -66,4 +66,4 @@ class AbstractEmailUser(AbstractUser):
         return "{}".format(self.email)
 
     def fullname(self):
-        return self.first_name + " " + self.last_name
+        return "{} {}".format(self.first_name,self.last_name)
