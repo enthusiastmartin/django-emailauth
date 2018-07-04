@@ -1,2 +1,2 @@
-django
-django-compat
+django==2.0.5
+django-compat==1.0.15
