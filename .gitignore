@@ -1,3 +1,4 @@
+.idea/
 *.coverage
 *.egg-info/
 *.pyc
@@ -9,5 +10,3 @@ db.sqlite
 dist/
 docs/_build/
 local_settings.py
-
-.idea/
