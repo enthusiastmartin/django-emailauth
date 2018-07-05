@@ -3,6 +3,8 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 """Models for the django-emailauth app."""
+
+
 class EmailUserManager(BaseUserManager):
     """Define a model manager for User model with no username field."""
 
@@ -66,4 +68,4 @@ class AbstractEmailUser(AbstractUser):
         return "{}".format(self.email)
 
     def fullname(self):
-        return "{} {}".format(self.first_name,self.last_name)
+        return "{} {}".format(self.first_name, self.last_name)
