@@ -71,3 +71,8 @@ class AbstractEmailUser(AbstractUser):
 
     def fullname(self):
         return "{} {}".format(self.first_name, self.last_name)
+
+
+class EmailUser(AbstractEmailUser):
+    """ Main User model """
+    pass

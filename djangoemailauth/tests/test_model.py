@@ -1,16 +1,15 @@
 """Tests for the models of the djangoemailauth app."""
 from django.test import TestCase
 
-from djangoemailauth.models import AbstractEmailUser
-
-
 # from mixer.backend.django import mixer
-
-class TestUser(AbstractEmailUser):
-    pass
+from djangoemailauth.models import EmailUser
 
 
 class UserModelTest(TestCase):
 
+    def setUp(self):
+        self.user = EmailUser.objects.create_user(password="password", email="email@email.com")
+        self.user.full_clean()
+
     def test_string_representation(self):
-        pass
+        self.assertEqual(str(self.user), "email@email.com")

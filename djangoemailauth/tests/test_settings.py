@@ -47,11 +47,12 @@ EXTERNAL_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
     'django.contrib.sites',
+    'djangoemailauth',
+    'djangoemailauth.tests.test_app',
 ]
 
 INTERNAL_APPS = [
-    'django-emailauth',
-    'django-emailauth.tests.test_app',
+    #'djangoemailauth.tests.test_app',
 ]
 
 INSTALLED_APPS = EXTERNAL_APPS + INTERNAL_APPS
@@ -64,3 +65,5 @@ MIDDLEWARE_CLASSES = [
 ]
 
 SECRET_KEY = 'foobar'
+
+AUTH_USER_MODEL = 'djangoemailauth.EmailUser'
