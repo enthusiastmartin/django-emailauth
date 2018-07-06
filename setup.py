@@ -29,7 +29,7 @@ http://docs.python.org/2/distutils/sourcedist.html
 """
 import os
 from setuptools import setup, find_packages
-import django-emailauth as app
+import djangoemailauth as app
 
 
 dev_requires = [
@@ -55,7 +55,7 @@ setup(
     keywords='django, app, reusable, email, auth, user, mode',
     author='enthusiast martin',
     author_email='enthusiastmartin@gmail.com',
-    url="https://github.com/enthusiastmartin/djangoemailauth",
+    url="https://github.com/enthusiastmartin/django-emailauth",
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
