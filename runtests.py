@@ -13,9 +13,9 @@ from fabric.colors import green, red
 if __name__ == '__main__':
     local('flake8 --ignore=E126 --ignore=W391 --statistics'
           ' --exclude=submodules,migrations,build .')
-    local('coverage run --source="django-emailauth" manage.py test -v 2'
+    local('coverage run --source="djangoemailauth" manage.py test -v 2'
           ' --traceback --failfast'
-          ' --settings=django-emailauth.tests.settings'
+          ' --settings=djangoemailauth.tests.settings'
           ' --pattern="*_tests.py"')
     local('coverage html -d coverage --omit="*__init__*,*/settings/*,'
           '*/migrations/*,*/tests/*,*admin*"')

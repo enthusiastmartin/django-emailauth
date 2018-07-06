@@ -1,8 +1,8 @@
-"""Views for the django-emailauth app."""
+"""Views for the djangoemailauth app."""
 # from django.views.generic import TemplateView
 
 # from . import models
 
 
 # class YourView(TemplateView):
-#    template_name = 'django-emailauth/default.html'
+#    template_name = 'djangoemailauth/default.html'

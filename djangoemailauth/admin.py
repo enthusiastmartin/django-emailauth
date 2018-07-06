@@ -1,4 +1,4 @@
-"""Admin classes for the django-emailauth app."""
+"""Admin classes for the djangoemailauth app."""
 # from django.contrib import admin
 
 # from . import models

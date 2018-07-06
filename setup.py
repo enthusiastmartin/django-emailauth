@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 """
-Python setup file for the django-emailauth app.
+Python setup file for the djangoemailauth app.
 
 In order to register your app at pypi.python.org, create an account at
 pypi.python.org and login, then register your new app like so:
@@ -21,7 +21,7 @@ If all looks good, you can make your first release:
     python setup.py sdist upload
 
 For new releases, you need to bump the version number in
-django-emailauth/__init__.py and re-run the above command.
+djangoemailauth/__init__.py and re-run the above command.
 
 For more information on creating source distributions, see
 http://docs.python.org/2/distutils/sourcedist.html
@@ -46,7 +46,7 @@ def read(fname):
         return ''
 
 setup(
-    name="django-emailauth",
+    name="djangoemailauth",
     version=app.__version__,
     description=read('DESCRIPTION'),
     long_description=read('README.rst'),
@@ -55,7 +55,7 @@ setup(
     keywords='django, app, reusable, email, auth, user, mode',
     author='enthusiast martin',
     author_email='enthusiastmartin@gmail.com',
-    url="https://github.com/enthusiastmartin/django-emailauth",
+    url="https://github.com/enthusiastmartin/djangoemailauth",
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,

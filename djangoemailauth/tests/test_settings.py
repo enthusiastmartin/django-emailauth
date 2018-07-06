@@ -16,7 +16,7 @@ DATABASES = {
     }
 }
 
-ROOT_URLCONF = 'django-emailauth.tests.urls'
+#ROOT_URLCONF = 'djangoemailauth.tests.urls'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(APP_ROOT, '../app_static')

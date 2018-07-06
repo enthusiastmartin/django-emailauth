@@ -2,7 +2,9 @@ from django.contrib.auth.base_user import BaseUserManager
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-"""Models for the django-emailauth app."""
+from django.utils.translation import ugettext_lazy as _
+
+"""Models for the djangoemailauth app."""
 
 
 class EmailUserManager(BaseUserManager):
