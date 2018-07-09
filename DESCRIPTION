@@ -1,1 +1,4 @@
-Django - custom user model with email authtentication.
+Django - custom user model with email authentication.
+
+
+Django app to allow email based authentication for users instead of default username. Username is removed from the model.

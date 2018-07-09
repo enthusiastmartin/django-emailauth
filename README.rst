@@ -1,7 +1,7 @@
 django-emailauth
 ============
 
-Django - custom user model with email authtentication.
+Django - custom user model with email authentication.
 
 Installation
 ------------
@@ -10,7 +10,7 @@ To get the latest stable release from PyPi
 
 .. code-block:: bash
 
-    pip install django-emailauth
+    pip install djangoemailauth
 
 To get the latest commit from GitHub
 
@@ -20,21 +20,21 @@ To get the latest commit from GitHub
 
 TODO: Describe further installation steps (edit / remove the examples below):
 
-Add ``django-emailauth`` to your ``INSTALLED_APPS``
+Add ``djangoemailauth`` to your ``INSTALLED_APPS``
 
 .. code-block:: python
 
     INSTALLED_APPS = (
         ...,
-        'django-emailauth',
+        'djangoemailauth',
     )
 
-Add the ``django-emailauth`` URLs to your ``urls.py``
+Add the ``djangoemailauth`` URLs to your ``urls.py``
 
 .. code-block:: python
 
     urlpatterns = [
-        url(r'^app-url/', include('django-emailauth.urls')),
+        url(r'^app-url/', include('djangoemailauth.urls')),
     ]
 
 Before your tags/filters are available in your templates, load them by using
