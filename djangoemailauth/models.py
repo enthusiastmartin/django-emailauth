@@ -67,9 +67,11 @@ class AbstractEmailUser(AbstractUser):
         ordering = ('-id',)
 
     def __str__(self):
+        """ Human readable representation - email"""
         return "{}".format(self.email)
 
     def fullname(self):
+        """ Return user's fullname ( first_name last_name ) """
         return "{} {}".format(self.first_name, self.last_name)
 
 
