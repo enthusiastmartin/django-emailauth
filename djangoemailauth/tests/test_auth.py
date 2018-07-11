@@ -14,3 +14,18 @@ class AuthenticateTest(TestCase):
         user = authenticate(email="email@email.com", password="password")
 
         self.assertIsNotNone(user)
+
+    def test_invalid_credentials(self):
+        user = authenticate(email="email@email.com", password="passwordinvalid")
+        self.assertIsNone(user)
+
+        user = authenticate(email="invalidemail@email.com", password="password")
+        self.assertIsNone(user)
+
+    def test_username_auth(self):
+        """ Test if username auth is not possible """
+        user = authenticate(username="someusername", password="password")
+
+        self.assertIsNone(user)
+
+
