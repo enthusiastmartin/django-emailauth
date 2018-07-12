@@ -19,7 +19,7 @@ To get the latest commit from GitHub
 
     pip install -e git+git://github.com/enthusiastmartin/django-emailauth.git#egg=djangoemailauth
 
-[Optional] Add ``djangoemailauth`` to your ``INSTALLED_APPS``. This is necceasry only if built-in EmailUser is used ( see Usage below for details )
+[Optional] Add ``djangoemailauth`` to your ``INSTALLED_APPS``. This is necessary only if built-in ``EmailUser`` is used ( see Usage below for details )
 
 .. code-block:: python
 
@@ -32,9 +32,29 @@ To get the latest commit from GitHub
 Usage
 -----
 
-TODO: Describe usage or point to docs. Also describe available settings and
-templatetags.
+``EmailUser``
 
+Make sure to add djangoemailauth to installed apps.
+
+Update ``settings.py`` to tell Django to use MyUser
+
+.. code-block:: python
+
+     AUTH_USER_MODEL = 'djangoemailauth.EmailUser'
+
+
+``AbstractEmailUser``
+
+.. code-block:: python
+
+    class MyUser(AbstractEmailUser):
+         ** extend User model with your attributes **
+
+Update ``settings.py`` to tell Django to use MyUser
+
+.. code-block:: python
+
+     AUTH_USER_MODEL = '<your module>.MyUser'
 
 Contribute
 ----------
