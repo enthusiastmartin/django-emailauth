@@ -57,24 +57,3 @@ Update ``settings.py`` to tell Django to use MyUser
 
      AUTH_USER_MODEL = '<your module>.MyUser'
 
-Contribute
-----------
-
-If you want to contribute to this project, please perform the following steps
-
-.. code-block:: bash
-
-    # Fork this repository
-    # Clone your fork
-    mkvirtualenv -p python2.7 django-emailauth
-    make develop
-
-    git co -b feature_branch master
-    # Implement your feature and tests
-    git add . && git commit
-    git push -u origin feature_branch
-    # Send us a pull request for your feature branch
-
-In order to run the tests, simply execute ``tox``. This will install two new
-environments (for Django 1.8 and Django 1.9) and run the tests against both
-environments.
