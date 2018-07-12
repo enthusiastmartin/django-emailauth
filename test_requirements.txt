@@ -6,3 +6,4 @@ mixer
 mock
 tox
 django-compat
+pypiwin32

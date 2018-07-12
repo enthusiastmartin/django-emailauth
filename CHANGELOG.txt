@@ -1,5 +1,5 @@
 === 0.0.X (onggoing, to be released as 0.1) ===
-- Initial commit
+- Initial base implementation
 
 
 # Suggested file syntax:
