@@ -42,10 +42,11 @@ Update ``settings.py`` to tell Django to use MyUser
 
      AUTH_USER_MODEL = 'djangoemailauth.EmailUser'
 
-
 ``AbstractEmailUser``
 
 .. code-block:: python
+
+    from djangoemailauth.models import AbstractEmailUser
 
     class MyUser(AbstractEmailUser):
          ** extend User model with your attributes **
