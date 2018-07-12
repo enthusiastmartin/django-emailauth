@@ -3,24 +3,23 @@ django-emailauth
 
 Django - custom user model with email authentication.
 
-Installation
+Note : still in development - although ready to use.
+
+Documentation
 ------------
 
-To get the latest stable release from PyPi
+To do ...
 
-.. code-block:: bash
-
-    pip install djangoemailauth
+Installation
+------------
 
 To get the latest commit from GitHub
 
 .. code-block:: bash
 
-    pip install -e git+git://github.com/enthusiastmartin/django-emailauth.git#egg=django-emailauth
+    pip install -e git+git://github.com/enthusiastmartin/django-emailauth.git#egg=djangoemailauth
 
-TODO: Describe further installation steps (edit / remove the examples below):
-
-Add ``djangoemailauth`` to your ``INSTALLED_APPS``
+[Optional] Add ``djangoemailauth`` to your ``INSTALLED_APPS``. This is necceasry only if built-in EmailUser is used ( see Usage below for details )
 
 .. code-block:: python
 
@@ -28,27 +27,6 @@ Add ``djangoemailauth`` to your ``INSTALLED_APPS``
         ...,
         'djangoemailauth',
     )
-
-Add the ``djangoemailauth`` URLs to your ``urls.py``
-
-.. code-block:: python
-
-    urlpatterns = [
-        url(r'^app-url/', include('djangoemailauth.urls')),
-    ]
-
-Before your tags/filters are available in your templates, load them by using
-
-.. code-block:: html
-
-	{% load django-emailauth_tags %}
-
-
-Don't forget to migrate your database
-
-.. code-block:: bash
-
-    ./manage.py migrate django-emailauth
 
 
 Usage
