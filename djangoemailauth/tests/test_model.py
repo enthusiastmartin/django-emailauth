@@ -2,7 +2,7 @@
 from django.test import TestCase
 
 # from mixer.backend.django import mixer
-from djangoemailauth.models import EmailUser
+from djangoemailauth.tests.test_app.models import EmailUser
 
 
 class UserModelTest(TestCase):

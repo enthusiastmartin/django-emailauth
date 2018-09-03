@@ -75,6 +75,3 @@ class AbstractEmailUser(AbstractUser):
         return "{} {}".format(self.first_name, self.last_name)
 
 
-class EmailUser(AbstractEmailUser):
-    """ Main User model """
-    pass

@@ -1,7 +1,7 @@
 from django.contrib.auth import authenticate
 from django.test import TestCase
 
-from djangoemailauth.models import EmailUser
+from djangoemailauth.tests.test_app.models import EmailUser
 
 
 class AuthenticateTest(TestCase):
